@@ -1,0 +1,27 @@
+{
+  "name": "githooks-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testSuccess": "echo \"Success: Test the success\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saikumar-madana/githooks-testing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saikumar-madana/githooks-testing/issues"
+  },
+  "homepage": "https://github.com/saikumar-madana/githooks-testing#readme",
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
+  },
+  "pre-commit": [
+    "testSuccess",
+    "test"
+  ]
+}
